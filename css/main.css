@@ -1,0 +1,87 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+*{
+	font-family: sans-serif;
+}
+header{
+	background-image: -moz-linear-gradient( 90deg, rgb(7,6,6) 0%, rgb(160,9,151) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(7,6,6) 0%, rgb(160,9,151) 100%);
+  	background-image: -ms-linear-gradient( 90deg, rgb(7,6,6) 0%, rgb(160,9,151) 100%);
+	height: 108px;
+	width: 100%; 
+	z-index: 2;	
+}
+hr{
+	border: 5px solid var(--color1);
+	width: 100%;
+}
+.imagen{
+	width: 250px;
+	height: 250px;
+	position: relative;
+
+}
+.imagen>img{
+	width: 100%;
+	height: 100%;
+
+}
+.imagen>.botones{
+	position: absolute;
+	bottom:0px;
+	background: var(--color1);
+	height: 30px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.botones>img{
+	position: relative;
+	width: 25px;
+	aspect-ratio: 1/1;
+	margin-top: auto;
+}
+.botones>img:hover{
+	cursor: pointer;
+}
+#visorImagenes{
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap:15px;
+}
+footer{
+	min-height: 150px;
+	width: 100%;
+	margin-top: 100px;
+	background-image: -moz-linear-gradient( 90deg, rgb(7,6,6) 0%, rgb(160,9,151) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(7,6,6) 0%, rgb(160,9,151) 100%);
+  	background-image: -ms-linear-gradient( 90deg, rgb(7,6,6) 0%, rgb(160,9,151) 100%);	
+  	color: white;
+
+}
+.redes{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	gap:20px;
+
+
+}
+.redes>img{
+	width: 40px;
+	aspect-ratio:1/1;
+}
+.derechos{
+	color: gray;
+}
+.derechos>h3{
+	text-align: center;
+	width: 100%;
+}
+.redes>img:hover{
+	cursor: pointer;
+}

@@ -1,0 +1,89 @@
+:root{
+	--color1: #5e085b;
+	--color2:#66926f;
+	--color3:black;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.conteiner{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap:10px;
+	width: 90%;
+	margin-left: 5%;
+	justify-content: center;
+
+}
+.r1{
+	display: flex;
+	flex-direction: row;
+	width: 95%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.c1{
+	position: relative;
+	min-width: 45%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+}
+.c2{
+	position: relative;
+	min-width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+}
+.btn-main{
+	background-color: var(--color1);
+}
+.tCenter{
+	text-align: center;
+}
+.t25{
+	margin-top: 25px;
+}
+.t50{
+	margin-top: 50px;
+}
+.t100{
+	margin-top:100px;
+}
+.t150{
+	margin-top: 150px;
+}
+.clR{
+	color: red;
+}
+section{
+	margin-top: 100px;
+}
+
+@media (max-width: 480px){
+	.c1{
+		min-width:100%;
+		width: 100%;
+	}
+	.r1{
+		flex-direction: column;
+		
+	}
+}
+@media (max-width: 360px){
+	.c1{
+		min-width:100%;
+		width: 100%;
+	}
+	.r1{
+		flex-direction: column;
+		
+	}
+}
